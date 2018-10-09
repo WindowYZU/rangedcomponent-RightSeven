@@ -38,12 +38,12 @@ public class ProgressBar2 {
                 while(true){
                     //累加 i 的值，顯示在 progressBar，注意超過100要拉回來
                     progressBar.setValue(i);
-                    i = (i+1)%100;
+                    i = (i+1)%101;
                     
                     
                     ////////////////////////////////////////////////
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(200);
                     } catch (InterruptedException ex) {
                         Logger.getLogger(ProgressBar2.class.getName()).log(Level.SEVERE, null, ex);
                     }
